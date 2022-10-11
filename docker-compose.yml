@@ -1,8 +1,8 @@
 version: '3'
 services:
-        notebook:
-          image: jupyter/datascience-notebook:${ARG_TAG}
-          container_name: 'notebook'
+        compvis:
+          image: jupyter/datascience-notebook:latest
+          container_name: 'compvis'
           extra_hosts:
             - "host.docker.internal:host-gateway" 
           volumes:
